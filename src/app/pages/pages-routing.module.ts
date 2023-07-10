@@ -17,6 +17,36 @@ const routes: Routes = [
         loadChildren: () =>
           import('./about/about.module').then((m) => m.AboutModule),
       },
+      {
+        path: 'login',
+        loadChildren: () =>
+          import('./login/login.module').then((m) => m.LoginModule),
+      },
+      {
+        path: 'registration',
+        loadChildren: () =>
+          import('./registration/registration.module').then((m) => m.RegistrationModule),
+      },
+      {
+        path: 'products',
+        loadChildren: () =>
+          import('./products/products.module').then((m) => m.ProductsModule),
+      },
+      {
+        path: 'product-details',
+        loadChildren: () =>
+          import('./product-details/product-details.module').then((m) => m.ProductDetailsModule),
+      },
+      {
+        path: 'cart',
+        loadChildren: () =>
+          import('./cart/cart.module').then((m) => m.CartModule),
+      },
+      {
+        path: 'checkout',
+        loadChildren: () =>
+          import('./checkout/checkout.module').then((m) => m.CheckoutModule),
+      },
     ],
   },
 ];

@@ -1,4 +1,115 @@
-<div>
+<header>
+  <div class="header-top-area">
+    <div class="container">
+      <div class="header-top-main">
+        <div class="header-top-contact-menu">
+          <ul class="ng-star-inserted">
+            <li><a href="tel:+8801234313"><i class="fa fa-phone-alt"
+                  style="transform: rotate(90deg); font-size: 14px;"></i> +8809643207070 </a>
+            </li>
+            <li><a href="mailto:info@redgrocer.com"><i class="fa fa-envelope"></i> admin@redgrocer.com </a></li>
+          </ul><!---->
+        </div>
+        <div class="header-discount">
+          <div>
+            <h3>20% Discount All New Customers</h3>
+          </div>
+          <div><button routerlink="./registration" tabindex="0">Get
+              Register</button></div>
+        </div>
+        <div class="header-top-right">
+          <ul>
+            <li><a href="/account/order-list">Track My Order</a></li>
+            <li><a href="#"><i class="fa fa-mobile"></i> App</a></li>
+            <li class="country">
+              <div class="country-main">
+                <div class="contry-img"><img src="./assets/images/brand/png/bangladesh.png" alt=""></div>
+                <div class="country-nam"><span> / BDT</span></div>
+              </div>
+            </li>
+            <li class="lang">
+              <div class="lang-main">
+                <div class="lang-nam"><button>EN</button></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-midle">
+    <div class="container">
+      <div class="header-midle-main">
+        <div class="header-logo"><!----><a routerlink="/" href="/" class="ng-star-inserted"><img alt=""
+              src="https://api.redgrocer.com/api/upload/images/red-grocer-limited-logo-a4bb.jpg"></a><!----><!---->
+        </div>
+        <div class="search-area">
+          <div>
+            <div class="search-main">
+              <div class="search-btn"><button routerlink="../product-list" class="left" tabindex="0"><i
+                    class="fa fa-search"></i></button></div>
+              <div class="search-input">
+                <form novalidate="" class="ng-untouched ng-pristine ng-invalid"><input id="searchInput" type="text"
+                    placeholder="Search Anything..." name="searchTerm" autocomplete="off" ngmodel="" required=""
+                    class="tw ng-untouched ng-pristine ng-invalid"></form>
+              </div><!---->
+            </div>
+            <ul id="auto-suggestion" class="auto-complete-box"><!----></ul>
+          </div>
+        </div>
+        <div class="header-midle-right">
+          <div class="icon-menu">
+            <ul>
+              <li><a routerlink="./wishlist" href="/wishlist"><i class="fa fa-heart"></i><span>00</span></a></li>
+              <li><a routerlink="./contact-us" href="/contact-us"><i class="fa fa-map-marker-alt"></i></a></li>
+              <li><a routerlink="./compare-list" href="/compare-list"><i
+                    class="fa-solid fa-shuffle"></i><span>00</span></a>
+              </li>
+              <li tabindex="0"><a><i class="fa fa-user"></i></a></li>
+            </ul>
+          </div>
+          <div class="sign-up" tabindex="0"><span></span>
+            <h3 style="cursor: pointer;"><a [routerLink]="['/registration']" routerLinkActive="router-link-active">Sign Up</a> / <a [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="header-midle-res">
+        <div class="header-midle-res-main">
+          <div class="join">
+            <div><img alt="" tabindex="0" src="./assets/images/brand/png/user.png"></div>
+          </div>
+          <div class="header-logo ng-star-inserted"><a routerlink="/" href="/"><img alt=""
+                src="https://api.redgrocer.com/api/upload/images/red-grocer-limited-logo-a4bb.jpg"></a></div><!---->
+          <div class="res-search-icon"><button><i class="fa fa-bars"></i></button><button><i
+                class="fa fa-search"></i></button></div>
+        </div><!---->
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="header-bottom-main">
+        <div class="header-menu"><!---->
+          <ul>
+            <li><a routerlink="/" href="/">Home </a></li>
+            <li><a routerlink="/products" href="/products">Products</a></li>
+            <li><a routerlink="/product-details" href="/product-details">Product Details</a></li>
+            <li><a routerlink="/cart" href="/cart">Cart</a></li>
+            <li><a routerlink="/checkout" href="/checkout">Checkout</a></li>
+            <!-- <li><a routerlink="/combo-package" href="/combo-package">Combo</a></li>
+            <li><a routerlink="/special-package" href="/special-package">Special Package</a></li>
+            <li><a routerlink="/coupon" href="/coupon">Coupon</a></li>
+            <li><a routerlink="/offers" href="/offers">Offers</a></li> -->
+          </ul>
+        </div>
+        <div class="header-len"><button routerlink="./outlet" tabindex="0">Visit Our Outlets </button><button
+            routerlink="./bazar-list" tabindex="0">Add Your Bazar List</button></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- <div>
   <nav class="navbar">
     <div class="navbar-container container">
       <input type="checkbox" name="" id="">
@@ -10,12 +121,14 @@
       <ul class="menu-items">
         <li><a [routerLink]="['/']">Home</a></li>
         <li><a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a></li>
+        <li><a [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a></li>
         <li><a href="javascript:void(0)">Category</a></li>
-        <li><a href="javascript:void(0)">Menu</a></li>
-        <li><a href="javascript:void(0)">Testimonial</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
+        <li><a [routerLink]="['/products']" routerLinkActive="router-link-active">Products</a></li>
+        <li><a [routerLink]="['/product-details']" routerLinkActive="router-link-active">Products Details</a></li>
+        <li><a [routerLink]="['/cart']" routerLinkActive="router-link-active">Cart</a></li>
+        <li><a [routerLink]="['/checkout']" routerLinkActive="router-link-active">Checkout</a></li>
       </ul>
       <h1 class="logo">Navbar</h1>
     </div>
   </nav>
-</div>
+</div> -->

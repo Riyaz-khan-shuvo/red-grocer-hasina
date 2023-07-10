@@ -1,0 +1,363 @@
+.logo-area {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff
+}
+
+.logo-area img {
+    width: auto;
+    margin: auto
+}
+
+.login-signup-area {
+    background-image: url(pexels-wendy-wei-1656666.419cec0cd31deb14.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.login-signup-area-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 15px;
+    background-color: #ffffffe6;
+    border-radius: 15px;
+    max-width: 1100px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 2px 3px #0003
+}
+
+.login-signup-left {
+    background-color: #c92127;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    z-index: 10
+}
+
+.your-journey-top {
+    display: block;
+    margin-bottom: 30px
+}
+
+.your-journey-top h3 {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 40px;
+    margin-bottom: 15px !important;
+    display: block
+}
+
+.your-journey-top p {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 15px !important;
+    display: block
+}
+
+.share-social {
+    display: block
+}
+
+.share-social h3 {
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    margin-bottom: 25px !important;
+    display: block
+}
+
+.share-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.share-social ul li {
+    display: inline-block;
+    margin-right: 25px
+}
+
+.share-social ul li:last-child {
+    margin: 0
+}
+
+.share-social ul li a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600
+}
+
+.login-signup-right {
+    display: block;
+    padding: 40px 10px;
+    box-sizing: border-box
+}
+
+.login-signup-menu {
+    display: block;
+    margin-bottom: 50px;
+    width: 100%
+}
+
+.login-signup-menu ul {
+    display: block;
+    list-style: none;
+    padding: 0
+}
+
+.login-signup-menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #163147;
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500
+}
+
+.login-signup-menu ul li a {
+    color: #808d97;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: Rubik, sans-serif;
+    transition: all .3s linear
+}
+
+.active {
+    color: #163147 !important
+}
+
+.login-signup-menu ul li a:hover {
+    transition: all .3s linear;
+    color: #183046
+}
+
+.login-signup-main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: 20px 50px;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative
+}
+
+.login-signup-main:after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #b1aeba;
+    position: absolute;
+    left: 53%;
+    top: 0px
+}
+
+.login-signup-title {
+    display: block;
+    margin-bottom: 30px
+}
+
+.login-signup-title h3 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #163147;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500
+}
+
+.form {
+    display: block;
+    padding-right: 10px;
+    box-sizing: border-box
+}
+
+.form input {
+    width: 100%;
+    display: block;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #b1b9bf;
+    padding: 10px 3px;
+    box-sizing: border-box;
+    color: #637381;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+    outline: none
+}
+
+.invalid-txt {
+    color: #ed203b;
+    font-weight: 500;
+}
+
+.form button {
+    max-width: 160px;
+    width: 100%;
+    display: block;
+    color: #183046;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #183046;
+    background-color: transparent;
+    margin-top: 25px;
+    transition: all .3s linear
+}
+
+.form button:hover {
+    background-color: #c92127;
+    color: #fff;
+    border-color: #c92127
+}
+
+.google-account {
+    box-sizing: border-box;
+    padding-right: 10px
+}
+
+.google-account ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.google-account ul li {
+    display: block;
+    margin-bottom: 15px
+}
+
+.google-account ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    color: #33455b;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #183046;
+    background-color: transparent;
+    transition: all .3s linear
+}
+
+.google-account ul li a i {
+    font-size: 17px;
+    color: #183046;
+    transition: all .3s linear
+}
+
+.google-account ul li a:hover {
+    color: #fff;
+    background-color: #c92127;
+    border-color: #c92127
+}
+
+.google-account ul li a:hover i {
+    color: #fff
+}
+
+@media (max-width: 997px) {
+    .login-signup-area-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px
+    }
+
+    .login-signup-right {
+        padding: 20px;
+        box-sizing: border-box
+    }
+
+    .login-signup-main:after {
+        display: none
+    }
+}
+
+@media (max-width: 767px) {
+    .login-signup-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px 20px
+    }
+
+    .login-signup-left {
+        border-radius: 0
+    }
+
+    .login-signup-area {
+        padding: 0 !important
+    }
+
+    .login-signup-area-main {
+        border-radius: 0 !important
+    }
+}
+
+@media (max-width: 420px) {
+    .your-journey-top h3 {
+        font-family: Rubik, sans-serif;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 35px
+    }
+
+    .your-journey-top p {
+        font-size: 19px;
+        line-height: 25px
+    }
+
+    .share-social {
+        display: block
+    }
+
+    .share-social h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 17px !important
+    }
+
+    .share-social ul li {
+        margin-right: 17px
+    }
+
+    .share-social ul li a {
+        font-size: 30px
+    }
+}
