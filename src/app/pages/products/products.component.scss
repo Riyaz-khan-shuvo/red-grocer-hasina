@@ -1,0 +1,357 @@
+.section-products {
+    background-color: #f7f7f7;
+    padding: 20px 0 50px;
+}
+
+.product {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #fff;
+    transition: all .3s linear;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.product:hover {
+    border-color: #c92127;
+    box-shadow: 0 15px 35px #0000001a
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    position: relative
+}
+
+.product-image img {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    object-fit: contain;
+    object-position: center
+}
+
+@media (max-width: 1200px) {
+    .product-image img {
+        height: 170px
+    }
+}
+
+.tag {
+    display: block;
+    position: absolute;
+    top: 0px
+}
+
+.tag span {
+    background-color: #09b409;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 17px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 8px
+}
+
+.tag .discount-tag {
+    background-color: #c92127
+}
+
+.tag span:last-child {
+    margin: 0
+}
+
+.wish {
+    color: #e8e8e8;
+    font-size: 19px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px
+}
+
+.active-wish-list {
+    color: #00cc0d
+}
+
+.icons {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    transition: all .4s linear
+}
+
+.product:hover .icons {
+    bottom: 15px;
+    visibility: visible;
+    opacity: 1
+}
+
+.icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center
+}
+
+.icons ul li {
+    display: inline-block;
+    margin-right: 10px
+}
+
+.icons ul li:last-child {
+    margin: 0
+}
+
+.icons ul li a {
+    background-color: #c92127;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 7px 12px #0000001f;
+    border-radius: 8px
+}
+
+.product-body {
+    display: block;
+    padding-top: 13px;
+    border-top: 1px solid #e8e8e8;
+    text-align: center
+}
+
+.rating-area {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px
+}
+
+.rating-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.rating-area ul li {
+    display: inline-block;
+    margin-right: 4px
+}
+
+.rating-area ul li:last-child {
+    margin: 0
+}
+
+.rating-area ul li i {
+    color: #ffab10;
+    font-size: 13px
+}
+
+.rating-area ul li:nth-child(5) i {
+    color: #777 !important
+}
+
+.rating-area ul li span {
+    display: block;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+    color: #777
+}
+
+.product-body a {
+    color: #39404a;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 36px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    max-height: 50px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 18px;
+    margin-bottom: 5px !important
+}
+
+.product-body a:hover {
+    color: #c92127
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 12px
+}
+
+.prevPrice {
+    color: #ff3838;
+    font-weight: 500;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    text-decoration: line-through
+}
+
+.currPrice {
+    color: #119744;
+    font-weight: 500;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-size: 17px
+}
+
+.currPrice small {
+    font-weight: 400;
+    /*! font-size:15px */
+}
+
+.product-body button {
+    background-color: #e8e8e8;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-size: 400;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 10px;
+    box-sizing: border-box;
+    color: #c92127;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: all .3s linear
+}
+
+.product-body button i {
+    font-size: 15px
+}
+
+.select-box {
+    display: block;
+    /*! margin-top:3px; */
+    margin-bottom: 10px
+}
+
+.select-box select,
+.select-box p {
+    display: block;
+    width: 100%;
+    border: 1px solid #b2bac1;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #08102d;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px
+}
+
+.cart-action {
+    display: flex;
+    margin-top: 2px;
+    background-color: #c92127;
+    align-items: center;
+    border-radius: 6px;
+    height: 42px
+}
+
+.cart-action button {
+    background-color: #c92127;
+    width: 42px;
+    color: #fff
+}
+
+.cart-action button span {
+    font-size: 17px
+}
+
+.cart-action button:focus {
+    outline: none
+}
+
+.cart-action button.left {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid #b9b9b9;
+    border-radius: 6px 0 0 6px
+}
+
+.cart-action button.right {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #b9b9b9;
+    border-radius: 0 6px 6px 0
+}
+
+.cart-action p {
+    flex: 1;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    text-align: center
+}
+
+@media only screen and (max-width: 599px) {
+    p span {
+        display: none
+    }
+}
+
+@media (max-width: 440px) {
+    .product-body a {
+        font-size: 15px;
+        line-height: 22px
+    }
+
+    .currPrice,
+    .prevPrice {
+        font-size: 16px
+    }
+
+    .product-body button i {
+        display: none
+    }
+
+    .product-body button {
+        padding: 8px 10px
+    }
+}
+
+.product:hover .product-button {
+    background-color: #c92127;
+    color: #fff
+}
+
+.product:hover .product-button-disabled {
+    background-color: #848383;
+    color: #fff
+}

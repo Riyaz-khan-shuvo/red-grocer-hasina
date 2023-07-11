@@ -1,0 +1,66 @@
+<div class="login-signup-area">
+    <div class="container">
+        <div class="login-signup-area-main">
+            <div class="login-signup-left">
+                <div class="your-journey">
+                    <div class="your-journey-top">
+                        <h3>Start Your Journey With Us</h3>
+                        <p>Red Grocer is a premium fastest online e-commerce for varrious types &amp; events across the
+                            country with best deals &amp; discount. </p>
+                    </div>
+                    <div class="share-social">
+                        <h3>Share In</h3>
+                        <ul>
+                            <li><a><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a><i class="fab fa-twitter"></i></a></li>
+                            <li><a><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="login-signup-right">
+                <div class="login-signup-menu">
+                    <ul>
+                        <li><a [routerLink]="['/login']" class="active">Login</a></li>
+                        <li>/</li>
+                        <li><a [routerLink]="['/registration']">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="login-signup-main">
+                    <div class="form">
+                        <div class="login-signup-title">
+                            <h3>We will need...</h3>
+                        </div>
+                        <form novalidate="" class="ng-pristine ng-invalid ng-touched">
+                            <div class="form-input"><input digitonly="" formcontrolname="username" type="text" value=""
+                                    placeholder="Enter Your Phone Number" autocomplete="off"
+                                    class="ng-pristine ng-invalid invalid ng-touched" maxlength="11">
+                                <div class="invalid-txt ng-star-inserted d-none"><span>Please enter a valid 11 digit
+                                        phone
+                                        number</span></div>
+                            </div>
+                            <div class="form-input"><input formcontrolname="password" type="password" value=""
+                                    placeholder="Enter Your Password" autocomplete="new-password"
+                                    class="ng-pristine ng-invalid invalid ng-touched">
+                                <div class="invalid-txt ng-star-inserted d-none"><span>Please enter a valid password at
+                                        least 6
+                                        character</span></div>
+                            </div>
+                            <button type="submit">Login</button>
+                        </form>
+                    </div>
+                    <div class="google-account">
+                        <div class="login-signup-title">
+                            <h3>Also can you...</h3>
+                        </div>
+                        <ul>
+                            <li><a type="button">Login with facebook <i class="fab fa-facebook-f"></i></a></li>
+                            <li><a type="button" class="login-with-google-btn">Login with Google <i
+                                        class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

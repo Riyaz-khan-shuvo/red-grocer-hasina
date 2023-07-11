@@ -1,0 +1,152 @@
+<div class="order-process-system">
+    <div class="container">
+        <div class="order-process-main">
+            <div class="order-process-system-info active-process"><span><i class="fa fa-shopping-cart"></i></span>
+                <h3>My Cart</h3>
+            </div>
+            <div class="order-process-system-info"><span><i class="fa fa-credit-card"></i></span>
+                <h3>Checkout</h3>
+            </div>
+            <div class="order-process-system-info"><span><i class="fa fa-check-circle"></i></span>
+                <h3>Confirmation</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-area">
+    <div class="container">
+        <div class="cart-area-main">
+            <div class="cart-table-area">
+                <div class="cart-table">
+                    <div class="table-head">
+                        <div class="table-row">
+                            <div class="table-sl-heading">
+                                <h3>SL</h3>
+                            </div>
+                            <div class="table-heading product">
+                                <h3>Product</h3>
+                            </div>
+                            <div class="table-heading quantity">
+                                <h3>Variant</h3>
+                            </div>
+                            <div class="table-heading quantity">
+                                <h3>Unit Price</h3>
+                            </div>
+                            <div class="table-heading price">
+                                <h3>Quantity</h3>
+                            </div>
+                            <div class="table-heading total">
+                                <h3>Total</h3>
+                            </div>
+                            <div class="table-heading remove">
+                                <h3>Remove</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-row ng-star-inserted">
+                            <div style="padding: 0 15px 0 10px;">
+                                <h3>1</h3>
+                            </div>
+                            <div class="table-data product">
+                                <div class="product-area">
+                                    <div class="product-img"><img checkimagedefault="" alt=""
+                                            src="https://api.redgrocer.com/api/upload/images/igloo-vanilla-icecream-1-ltr-aa14.jpg">
+                                    </div>
+                                    <div class="product-info ng-star-inserted">
+                                        <div class="product-title"><a
+                                                href="/product-details/igloo-vanilla-ice-cream-1000">Igloo vanilla
+                                                Ice cream 1Ltr</a></div>
+                                        <div style="font-weight: 600; color: #119744;" class="ng-star-inserted">Unit : 1
+                                            ltr</div>
+                                        <div>SKU : AMLIVI1000</div>
+                                        <div class="product-stock-badge-point"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-data-2 variant">
+                                <div class="select-box ng-star-inserted"> N/A </div>
+                            </div>
+                            <div class="table-data-2 price">
+                                <div class="stock-badge"><span class="ng-star-inserted">Discount
+                                        (0Tk)</span></div>
+                                <h3 class="ng-star-inserted"> 270TK </h3>
+                            </div>
+                            <div class="table-data quantity">
+                                <div class="quantity-info">
+                                    <div><button disabled="">-</button></div>
+                                    <div><input type="text" readonly="" value="1"></div>
+                                    <div><button>+</button></div>
+                                </div>
+                            </div>
+                            <div class="table-data tax">
+                                <h4 class="ng-star-inserted">270TK</h4>
+                            </div>
+                            <div class="table-data remove">
+                                <div class="remove-icon"><span><i class="fa fa-trash"></i></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-responsive-product-area">
+                <div class="responsive-cart-product ng-star-inserted">
+                    <div class="res-cart-left">
+                        <div class="responsive-product-img"><img checkimagedefault=""
+                                src="https://api.redgrocer.com/api/upload/images/igloo-vanilla-icecream-1-ltr-aa14.jpg">
+                            <div class="res-cart-delete"><span><i class="fa fa-trash"></i></span></div>
+                        </div>
+                    </div>
+                    <div class="res-cart-right">
+                        <div class="res-product-title"><a href="#">Igloo vanilla Ice cream 1Ltr </a></div>
+                        <div class="res-cart-right-bottom">
+                            <div class="res-cart-price"><span>1
+                                    ltr</span>
+                                <h3> 270TK</h3>
+                            </div>
+                            <div class="res-car-quantity-area">
+                                <div class="quantity-info">
+                                    <div><button disabled="">-</button></div>
+                                    <div><input type="text" readonly=""></div>
+                                    <div><button>+</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="messsage-area">
+                <div class="cart-summery-area">
+                    <div class="cart-summery-main">
+                        <div class="cart-summery-info">
+                            <div class="cart-summery-info-left">
+                                <h3>Subtotal</h3>
+                            </div>
+                            <div class="cart-summery-right">
+                                <h3>270TK</h3>
+                            </div>
+                        </div>
+                        <div class="cart-summery-info">
+                            <div class="cart-summery-info-left">
+                                <h3>Grand Total</h3>
+                            </div>
+                            <div class="cart-summery-right">
+                                <h3>270 TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="cart-btn-area">
+                    <div class="cart-btn-info">
+                        <div class="cart-btn-left"><button routerlink="../product-list" tabindex="0"><i
+                                    class="fa fa-arrow-left"></i><span>Return to
+                                    shop</span></button></div>
+                        <div class="cart-btn-right"><button type="button" [routerLink]="['/checkout']">Go to Checkout </button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
