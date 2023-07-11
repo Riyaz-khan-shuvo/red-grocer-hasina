@@ -1,0 +1,141 @@
+<main>
+  <header appoutsideclick="">
+    <div class="header-top-area">
+      <div class="container">
+        <div class="header-top-main">
+          <div class="header-top-contact-menu">
+            <ul>
+              <li><a href="tel:+8801234313"><i class="fa fa-phone-alt"
+                    style="transform: rotate(90deg); font-size: 14px;"></i> +8809643207070
+                </a></li>
+              <li><a href="mailto:info@redgrocer.com"><i class="fa fa-envelope"></i> admin@redgrocer.com </a></li>
+            </ul><!---->
+          </div>
+          <div class="header-discount">
+            <div>
+              <h3>20% Discount All New Customers</h3>
+            </div>
+            <div><button routerlink="./registration" tabindex="0">Get
+                Register</button></div>
+          </div>
+          <div class="header-top-right">
+            <ul>
+              <li><a href="/login">Track My Order</a></li>
+              <li><a href="#"><i class="fa fa-mobile"></i> App</a></li>
+              <li class="country">
+                <div class="country-main">
+                  <div class="contry-img"><img src="./assets/images/brand/png/bangladesh.png" alt=""></div>
+                  <div class="country-nam"><span> / BDT</span></div>
+                </div>
+              </li>
+              <li class="lang">
+                <div class="lang-main">
+                  <div class="lang-nam"><button>EN</button></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-midle header-fixed">
+      <div class="container">
+        <div class="header-midle-main">
+          <div class="header-logo"><!----><a routerlink="/" href="/"><img alt=""
+                src="https://api.redgrocer.com/api/upload/images/red-grocer-limited-logo-a4bb.jpg"></a><!----><!---->
+          </div>
+          <div class="search-area">
+            <div>
+              <div class="search-main">
+                <div class="search-btn"><button routerlink="../product-list" class="left" tabindex="0"><i
+                      class="fa fa-search"></i></button></div>
+                <div class="search-input">
+                  <form novalidate="" class="ng-untouched ng-pristine ng-invalid"><input id="searchInput" type="text"
+                      placeholder="Search Anything..." name="searchTerm" autocomplete="off" ngmodel="" required=""
+                      class="tw ng-untouched ng-pristine ng-invalid"></form>
+                </div>
+                <div class="search-btn"><button><!----><i class="fa-solid fa-microphone"></i><!----></button></div>
+                <!---->
+              </div>
+              <ul id="auto-suggestion" class="auto-complete-box"><!----></ul>
+            </div>
+          </div>
+          <div class="header-midle-right">
+            <div class="icon-menu">
+              <ul>
+                <li><a routerlink="./wishlist" href="/wishlist"><i class="fa fa-heart"></i><span>00</span></a></li>
+                <li><a routerlink="./contact-us" href="/contact-us"><i class="fa fa-map-marker-alt"></i></a></li>
+                <li><a routerlink="./compare-list" href="/compare-list"><i
+                      class="fa-solid fa-shuffle"></i><span>00</span></a></li>
+                <li tabindex="0"><a><i class="fa fa-user"></i></a></li>
+              </ul>
+            </div>
+            <div class="sign-up" tabindex="0"><span></span>
+              <h3 style="cursor: pointer;">Sign Up / Login</h3>
+            </div>
+          </div>
+        </div>
+        <div class="header-midle-res">
+          <div class="header-midle-res-main">
+            <div class="join">
+              <div><img alt="" tabindex="0" src="./assets/images/brand/png/user.png"></div>
+            </div>
+            <div class="header-logo"><a routerlink="/" href="/"><img alt=""
+                  src="https://api.redgrocer.com/api/upload/images/red-grocer-limited-logo-a4bb.jpg"></a></div><!---->
+            <div class="res-search-icon"><button><i class="fa fa-bars"></i></button><button><i
+                  class="fa fa-search"></i></button></div>
+          </div><!---->
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-main">
+          <div class="header-menu"><!---->
+            <ul>
+              <li><a routerlink="/" href="/">Home </a></li>
+              <li><a routerlink="/combo-package" href="/combo-package">Combo</a></li>
+              <li><a routerlink="/special-package" href="/special-package">Special Package</a></li>
+              <li><a routerlink="/coupon" href="/coupon">Coupon</a></li>
+              <li><a routerlink="/offers" href="/offers">Offers</a></li>
+            </ul>
+          </div>
+          <div class="header-len"><button routerlink="./outlet" tabindex="0">Visit Our Outlets </button><button
+              routerlink="./bazar-list" tabindex="0">Add Your Bazar List</button></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="bottom-nav">
+    <ul>
+      <li><a routerlink="/" href="/"><span><i class="fa fa-home"></i></span>
+          <h4>Home</h4>
+        </a></li>
+      <li><a><span><i class="fas fa-list"></i></span>
+          <h4>Category</h4>
+        </a></li>
+      <li><a><span><i class="fas fa-shopping-basket"></i></span>
+          <h4>Cart</h4><small>00</small>
+        </a></li>
+      <li><a routerlink="./wishlist" href="/wishlist"><span><i class="fas fa-heart"></i></span>
+          <h4>wishlist</h4><small>00</small>
+        </a></li>
+      <li><a mattooltip="Compare" routerlink="./compare-list" class="mat-tooltip-trigger" href="/compare-list"
+          aria-describedby="cdk-describedby-message-1" cdk-describedby-host="0"><span><i
+              class="fas fa-random"></i></span>
+          <h4>Compare</h4><small>00</small>
+        </a><!----></li>
+    </ul>
+  </div>
+  <!-- <div class="cart-slide">
+    <app-cart-slide></app-cart-slide>
+  </div>
+  <app-category-slide></app-category-slide>
+  <app-slide-menu></app-slide-menu> -->
+  <div class="cart-fixed-box">
+    <div class="cart-box">
+      <div class="cart-box-top"><span>00 Items</span><i class="fa-solid fa-basket-shopping"></i></div>
+      <div class="cart-price"><span>৳0</span></div>
+    </div>
+  </div>
+</main><!---->
